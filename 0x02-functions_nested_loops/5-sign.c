@@ -4,7 +4,7 @@
  * print_sign - print the negative or positive sign of a value
  * @n: (type int) holds the integer
  *
- * return: 1 (positive) 0 (negative) -1 (zero)
+ * Return: 1 (positive) 0 (negative) -1 (zero)
  */
 int print_sign(int n)
 {
