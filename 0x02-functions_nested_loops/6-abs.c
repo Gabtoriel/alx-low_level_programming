@@ -8,7 +8,7 @@
  */
 int _abs(int n)
 {
-	int abs = (int) n;
+	int abs = (unsigned int) n;
 
 	return (abs);
 }
