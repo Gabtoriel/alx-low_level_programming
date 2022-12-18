@@ -8,7 +8,10 @@
  */
 int _abs(int n)
 {
-	int abs = (unsigned int) n;
+	if (n > 0)
+	{
+		return (n);
+	}
 
-	return (abs);
+	return (-n);
 }
