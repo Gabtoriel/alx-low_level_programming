@@ -24,6 +24,7 @@ void print_rev(char *s)
 		{
 			--count;
 			_putchar((*(s + count)));
+			--count;
 		}
 		_putchar('\n');
 	}
