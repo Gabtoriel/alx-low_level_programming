@@ -20,6 +20,7 @@ void rev_string(char *s)
 	for (k = 0; k < count / 2; k++)
 	{
 		char ch = s[k];
+
 		s[k] = s[count - 1 - k];
 		s[count - 1 - k] = ch;
 	}
