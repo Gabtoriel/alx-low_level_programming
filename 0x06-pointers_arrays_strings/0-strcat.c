@@ -1,37 +1,26 @@
-#include "main.h"
-
-int _strlen(char *s);
-
 /**
- * _strcat - This concatenates two stings
- * @dest: this is the string to be added
- * @src: This is the string to be added
- * Return: a pointer to the dest parameter
- */
+ * _strcat - function that concatenates
+ *          two strings.
+ *
+ * @dest: pointer to destnation input
+ * @src: pointer to source input
+ *
+ * Return: pointer to resulting string @dest
+*/
+
 char *_strcat(char *dest, char *src)
 {
-	int _ld = _strlen(dest);
-	int _ls = _strlen(src);
+	int c, c2;
 
-	for (int i = 0; i <= _ls; i++)
-	{
-		dest[_ld + i] = src[i];
-	}
+	c = 0;
+	/*find the size of dest array*/
+	while (dest[c])
+		c++;
+
+	/* iterate through each src array value without the null byte*/
+	for (c2 = 0; src[c2] ; c2++)
+		/*append src[c2] to dest[c] while overwritting the null byte in dest*/
+		dest[c++] = src[c2];
+
 	return (dest);
-}
-
-/**
- * _strlen - function to get the length of a string and return a pointer
- * @c: char pointer
- * Return: int (number of characters in the string
- */
-int _strlen(char *s)
-{
-	int count = 0;
-
-	for (int i = 0; s[i] != '\0'; i++)
-	{
-		count++;
-	}
-	return (count);
 }
