@@ -17,18 +17,10 @@ void rev_string(char *s)
 		i++;
 	}
 
-	char rev[];
-
-	for (j = 0; j < count; j++)
+	for (int k = 0; k < count/2; k++)
 	{
-		rev[j] = *(s + j);
-	}
-
-	r_count = count;
-	--count;
-	for (k = 0; k < r_count; k++)
-	{
-		*(s + k) = rev[count];
-		--count;
+		char ch = s[k];
+		s[k] = s[count - 1 - k];
+		s[count - 1 - k] = ch;
 	}
 }
