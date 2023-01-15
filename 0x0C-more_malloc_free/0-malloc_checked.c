@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * malloc_checked - allocate a bunch of memory using malloc and return a pointer
+ * malloc_checked - allocate a bunch of memory using malloc
  * @b: Size of memory to be allocated
  * Return: a pointer to the memory or exit(98) if allocation fails
  */
