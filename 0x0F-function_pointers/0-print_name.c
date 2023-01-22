@@ -1,5 +1,3 @@
-#include "function_pointers.h"
-
 /**
  * print_name - A function that prints a string
  * @name: pointer to a the constant string to be printed
