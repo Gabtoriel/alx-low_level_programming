@@ -1,6 +1,6 @@
 /**
  * print_name - A function that prints a string
- * @name: pointer to a the constant string to be printed
+ * @name: pointer to the constant string to be printed
  * @f: pointer to the function used to print the passed string
  * Return: void
  */
