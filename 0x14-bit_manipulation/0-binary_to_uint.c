@@ -25,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 			count = count - 1;
 			continue;
 		}
-		else 
+		else
 		{
 			n = n + (1 * _pow(k, count));
 			count = count - 1;
@@ -36,7 +36,7 @@ unsigned int binary_to_uint(const char *b)
 
 /**
  * _strlen - program to count a string
- * @c: pointer to the string of characters to be counted
+ * @s: pointer to the string of characters to be counted
  * Return: (unsigned int) this is the length of the string
  */
 unsigned int _strlen(const char *s)
@@ -57,7 +57,7 @@ unsigned int _strlen(const char *s)
 			n++;
 		}
 		else
-			return ((unsigned int) 0);
+			return (0);
 	}
 	return (count);
 }
