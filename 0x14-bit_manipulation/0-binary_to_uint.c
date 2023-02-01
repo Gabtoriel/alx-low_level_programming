@@ -46,7 +46,7 @@ unsigned int _strlen(const char *s)
 
 	count = 0;
 	n = 0;
-i
+
 	if (s == NULL)
 		return (0);
 	while ((*(s + n)) != '\0')
