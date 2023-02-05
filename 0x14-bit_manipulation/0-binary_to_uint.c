@@ -46,7 +46,7 @@ unsigned int _strlen(const char *s)
 
 	count = 0;
 	n = 0;
-
+i
 	if (s == NULL)
 		return (0);
 	while ((*(s + n)) != '\0')
@@ -71,7 +71,7 @@ unsigned int _strlen(const char *s)
 unsigned int _pow(unsigned int n, unsigned int e)
 {
 	unsigned int p = 1, i;
-	
+
 	for (i = 1; i < e; i++)
 	{
 		if (e == 0)
