@@ -8,18 +8,16 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	dlistint_t *head;
 	size_t count;
 
-	head = h;
 	count = 0;
 
-	while (head != NULL)
+	while (h != NULL)
 	{
-		if (count == 0 && head->prev == NULL)
+		if (count == 0 && h->prev == NULL)
 			exit(1);
 		count++;
-		head = head->next;
+		h = h->next;
 	}
 	return (count);
 }
