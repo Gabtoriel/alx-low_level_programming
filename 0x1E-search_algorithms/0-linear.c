@@ -16,7 +16,7 @@ int linear_search(int *array, size_t size, int value)
 	i = 0;
 
 	if (array == NULL)
-		return (-1);
+		return ((int)-1);
 	while (i < size)
 	{
 		printf("%d\n", array[i]);
@@ -24,5 +24,5 @@ int linear_search(int *array, size_t size, int value)
 			return ((int)i);
 		i++;
 	}
-	return (-1);
+	return ((int)-1);
 }
