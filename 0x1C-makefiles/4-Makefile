@@ -11,7 +11,7 @@ $(NAME): $(OBJ)
 	$(CC) -o $@ $(OBJ)
 
 $(OBJ): %.o: %.c
-	$(CC) -c $(CFLAGS) $< m.h
+	$(CC) -c $(CFLAGS) -o $@ $<
 
 .PHONY: clean oclean fclean re
 
@@ -24,5 +24,5 @@ oclean:
 fclean:
 	$(RM) -f $(NAME) $(OBJ) *~
 
-re:
-	$(CC) $(CFLAGS) -o $(NAME) $(SRC) m.h
+re: oclean $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
