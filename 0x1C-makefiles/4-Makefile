@@ -16,13 +16,13 @@ $(OBJ): %.o: %.c
 .PHONY: clean oclean fclean re
 
 clean:
-	$(RM) -f *~ school
+	$(RM) -f *~ $(NAME)
 
 oclean:
 	$(RM) -f $(OBJ)
 
 fclean:
-	$(RM) -f school $(OBJ) *~
+	$(RM) -f $(NAME) $(OBJ) *~
 
 re:
 	$(CC) $(CFLAGS) -o $(NAME) $(SRC) m.h
