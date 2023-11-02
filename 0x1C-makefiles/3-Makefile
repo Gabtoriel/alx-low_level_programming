@@ -23,5 +23,5 @@ oclean:
 fclean:
 	$(RM) -f $(NAME) $(OBJ) *~
 
-re:
+re::
 	$(CC) -o $(NAME) $(SRC) m.h
